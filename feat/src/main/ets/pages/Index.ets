@@ -1,7 +1,18 @@
+import { getHomeDataApi } from '../../../../../entry/src/main/ets/api/home'
+
 @Entry
 @Component
 struct Index {
   @State message: string = 'Hello World';
+
+  aboutToAppear() {
+    this.getHomeData()
+  }
+
+  async getHomeData() {
+    const homeData = await getHomeDataApi()
+    console.log(JSON.stringify(homeData.bannerList))
+  }
 
   build() {
     RelativeContainer() {

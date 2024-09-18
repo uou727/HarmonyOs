@@ -71,6 +71,28 @@
           ],
           "when": "always"
         }
+      },
+      {
+        "name": "ohos.permission.READ_MEDIA",
+        "reason": "$string:reasonReadWriteMedia",
+        //使用权限原因
+        "usedScene": {
+          "abilities": [
+            //使用的该权限的EntryAbility名称数组
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.WRITE_MEDIA",
+        "reason": "$string:reasonReadWriteMedia",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
       }
     ]
   }

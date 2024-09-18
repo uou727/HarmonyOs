@@ -23,6 +23,23 @@
         "startWindowBackground": "$color:start_window_background",
         "exported": true
       }
+    ],
+    "requestPermissions": [
+      // 申请权限
+      {
+        "name": "ohos.permission.APPROXIMATELY_LOCATION",
+        "reason": "$string:app_name",
+        "usedScene": {
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.LOCATION",
+        "reason": "$string:app_name",
+        "usedScene": {
+          "when": "inuse"
+        }
+      }
     ]
   }
 }
